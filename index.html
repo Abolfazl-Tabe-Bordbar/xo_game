@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>XO Game</title>
+</head>
+
+<body class="bg-slate-500">
+
+    <header class="w-full text-white text-2xl font-bold text-center block my-5">Welcome To My XO Game</header>
+
+    <main class="w-11/12 h-auto  mx-auto flex flex-col-reverse md:flex-row justify-between items-center">
+
+        <section
+            class="w-10/12 md:w-6/12 mx-auto rounded-lg h-[500px] bg-yellow-400 shadow shadow-slate-50 grid grid-rows-3 grid-cols-3 gap-5 box-border p-5">
+
+            <button id="1" onclick="draw(1,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="2" onclick="draw(2,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="3" onclick="draw(3,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="4" onclick="draw(4,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="5" onclick="draw(5,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="6" onclick="draw(6,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="7" onclick="draw(7,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="8" onclick="draw(8,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+            <button id="9" onclick="draw(9,event)"
+                class="w-full h-full bg-slate-500 flex justify-center box-border p-5 items-center rounded-md col-span-1 hover:bg-slate-400">
+                <img src="./assets/images/o.svg" class="w-full h-full hidden" alt="">
+                <img src="./assets/images/x.svg" class="w-full h-full hidden" alt="">
+            </button>
+
+        </section>
+
+        <section class="w-full md:w-4/12 box-border p-5 h-auto md:h-[300px] flex flex-col justify-start items-center">
+
+            <div class="w-full flex  justify-between items-center text-white text-lg">
+                <span>Game Details</span>
+
+                <div class=" gap-3 h-12 flex justify-around items-center">
+                    <div id="timer_hour"
+                        class="bg-blue-400 rounded-full w-[40px] h-10 flex justify-center items-center text-white text-sm font-bold">
+                        0 </div>:
+                    <div id="timer_minutes"
+                        class="bg-blue-400 rounded-full w-[40px] h-10 flex justify-center items-center text-white text-sm font-bold">
+                        0 </div>:
+                    <div id="timer_seconds"
+                        class="bg-blue-400 rounded-full w-[40px] h-10 flex justify-center items-center text-white text-sm font-bold">
+                        0 </div>
+                </div>
+
+            </div>
+
+            <ul id="players_detail" class="list-decimal text-white text-lg w-full">
+                <!-- This place for add element with js -->
+            </ul>
+        </section>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/script/main.js"></script>
+
+</html>
